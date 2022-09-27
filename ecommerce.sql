@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 27, 2022 at 04:52 PM
+-- Generation Time: Sep 27, 2022 at 05:32 PM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -44,7 +44,8 @@ INSERT INTO `basket` (`idbasket`, `userId`, `productId`, `orderdatetime`) VALUES
 (57, 1243, 17, '2022-09-27 13:46:54'),
 (58, 1243, 17, '2022-09-27 13:46:56'),
 (59, 1242, 12, '2022-09-27 13:54:56'),
-(60, 1242, 13, '2022-09-27 13:54:58');
+(60, 1242, 13, '2022-09-27 13:54:58'),
+(61, 1242, 21, '2022-09-27 17:25:17');
 
 -- --------------------------------------------------------
 
@@ -283,7 +284,8 @@ INSERT INTO `product` (`idproduct`, `producttypeId`, `menuId`, `newcollection`, 
 (17, 3, 19, 1, 34, 40, 'AZN', 0, '<p> Material-Yüksək keyfiyyətli PU dəri, gözəl toxunuşlu qızıl metal aparat, davamlı polyester astar </p> \r\n\r\n<p> Struktur - 1 fermuarlı arxa cib və 5 daxili cib (2 fermuarlı cib, 1 əsas açıq cib və 2 sürüşmə cib) İçəridə bir neçə zəruri əşyalar üçün otaq və pul kisəsi, lakin böyük notebook və ya planşet üçün deyil (Qeyd: yan tərəfdə 2 fermuar əlavə yer olmadan çantadakı yeri genişləndirməyə kömək edir) </p>\r\n\r\n<p> Ocation-Fashion qaçış çantası, kollec çantası, alış-verişə getmək və ya açıq havada fəaliyyət göstərmək üçün çox yaraşıqlı, bütün kiçik gündəlik ehtiyaclarınızı daşımaq üçün sevimli təsadüfi və iş çantaları üçün mükəmməldir. </p>\r\n\r\n<p> Note: Sadə qablaşdırma.Satışdan sonrakı xidmət:Sınıq, zədələnmiş əşya alsanız, şəkillərlə bizimlə əlaqə saxlayın, bunu təsdiq etdikdən sonra biz 24 saat ərzində pulu geri qaytaracağıq və siz əşyanı geri qaytarmadan saxlaya bilərsiniz. Əşyalarınızla bağlı hər hansı əlavə problem varsa, əlaqə saxlayın. </p>', 'B&E LIFE Moda Çiyin Çantası Sırt Çantası PU Dəri Qadın Qızlar Qadın Sırt Çantası Səyahət çantası (Qara)', '31cm (hündürlük) x 26cm (Uzunluq)x 16cm (Genişlik)', 'images/products/product1.jpg'),
 (18, 3, 19, 0, 1011.5, 1500, 'AZN', 1, '<p> A gilt insignia polishes the front of a streamlined envelope clutch crafted from Italian calfskin leather.  </p>\r\n\r\n   <p> Maqnetik qapaqlı qapaq  </p>\r\n   <p> Astarlı</p>\r\n  <p>  Dana dərisi  </p>\r\n  <p>  İtaliya istehsalıdır  </p>\r\n   <p> Dizayner Çantaları  </p>', 'SAINT LAURENT\r\nUptown Dana Dərisi Dəri Zərf Debriyajı\r\n', '\"10 1/2 En x 6\" Hündürlük x 1/4\"Dərinlik. (İç kapasite: ekstra küçük.)', 'images/products/product2.webp'),
 (19, 1, 19, 0, 79.89, 200.59, 'AZN', 1, '<p> Ekipaj boyun </p>\r\n\r\n<p> Qısa qol </p>\r\n\r\n<p> Pullover tərzi </p>\r\n\r\n<p> Ətəyinə yaxın bükmə detalı </p>\r\n\r\n<p> Bu Amur üslubu, iqlim dəyişikliyinin qarşısını almağa kömək edən bərpaedici əkinçilik sistemində yetişdirilən və B Corp sertifikatlı və Ümumdünya Ədalətli Ticarət Təşkilatının üzvü olan Perudakı fabrikdə istehsal edilən sertifikatlı üzvi pambıqdan hazırlanır.</p>\r\n\r\n<p> 100% organic cotton </p>', 'Amur\r\nZəhra Twist Ön Tişört\r\n', '5\'10\" hündürlük, 33.5\" büst, 23.5\" bel, 34.5\" çanaq , balaca razmer geyinib', 'images/products/product3.webp'),
-(20, 3, 19, 1, 580, 550, 'AZN', 1, '<p> 100% UV müdafiəsi </p>\r\n\r\n<p> İtaliya istehsalıdır </p>\r\n', 'Dior\r\nQadın kvadrat günəş eynəyi\r\n', 'Lens eni: 58 mm\r\nKörpünün eni: 15 mm\r\nQol uzunluğu: 130 mm', 'images/products/product4.webp');
+(20, 3, 19, 1, 580, 550, 'AZN', 1, '<p> 100% UV müdafiəsi </p>\r\n\r\n<p> İtaliya istehsalıdır </p>\r\n', 'Dior\r\nQadın kvadrat günəş eynəyi\r\n', 'Lens eni: 58 mm\r\nKörpünün eni: 15 mm\r\nQol uzunluğu: 130 mm', 'images/products/product4.webp'),
+(21, 1, 19, 1, 500, 500, 'AZN', 1, 'Məhsul haqda', 'Məhsul', '160 sm uzunluq \r\n80 sm en', 'images/products/6332f9ac56ac3.jpg');
 
 -- --------------------------------------------------------
 
@@ -346,7 +348,8 @@ CREATE TABLE `wishlist` (
 INSERT INTO `wishlist` (`idwish`, `productId`, `userId`, `orderdatetime`) VALUES
 (107, 20, 1243, '2022-09-27 13:46:49'),
 (108, 19, 1243, '2022-09-27 13:46:50'),
-(109, 12, 1242, '2022-09-27 13:54:52');
+(109, 12, 1242, '2022-09-27 13:54:52'),
+(110, 21, 1242, '2022-09-27 17:25:12');
 
 --
 -- Indexes for dumped tables
@@ -448,7 +451,7 @@ ALTER TABLE `content`
 -- AUTO_INCREMENT for table `contenttype`
 --
 ALTER TABLE `contenttype`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `emailsubscribe`
