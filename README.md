@@ -9,7 +9,7 @@ Example for PHP MYSQLi Procedural
 
 <br>
 
-<h2> For admin <h2>
+<h5> For admin <h5>
 <p> username: admin </p> <p>password: admin </p>
 
 ![adminpanel](https://user-images.githubusercontent.com/30021708/192540859-92767ca5-b0aa-4271-9280-a4c23c3e11f2.PNG)
