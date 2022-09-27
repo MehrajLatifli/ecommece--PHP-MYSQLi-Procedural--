@@ -3,6 +3,8 @@
 
 Example for PHP MYSQLi Procedural
 
+<br>
+
 ![phpmyadmin](https://user-images.githubusercontent.com/30021708/192544384-1a64e571-3066-4d68-9808-43acf2d5fb2d.PNG)
 
 <br>
